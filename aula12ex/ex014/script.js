@@ -5,7 +5,9 @@ function carregar() {
     var legenda = window.document.getElementById('legenda')
     var data = new Date()
     var hora = data.getHours()
+
     msg.innerHTML = `Agora são ${hora} horas.`
+    
     if (hora >= 0 && hora < 12) {
         // Bom dia
         img.src = 'imagens/fotomanha.png'
